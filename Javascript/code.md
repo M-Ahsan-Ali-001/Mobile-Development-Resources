@@ -9,3 +9,34 @@ for ( var x =0 ; x < arr.length ; x++)
 console.log("%c" + arr[x],style );
 }
 ~~~
+
+# Loops
+~~~
+
+var i = 0;
+while (i<12){
+console.log(i);
+i++;
+}
+
+for(var i = 0 ; i<12 ; i++){
+
+console.log(i+1);
+
+}
+~~~
+
+# Object Literals 
+~~~
+var employee ={
+name : "user1",
+id :3456,
+designation: "Manager"
+}
+
+console.log(employee);
+employee.salary = "14000$";
+console.log(employee);
+~~~
+ 
+
