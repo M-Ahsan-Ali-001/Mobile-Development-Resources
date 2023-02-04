@@ -49,7 +49,7 @@ console.log(employee);
  
  detail("brk101",5567)
  ~~~
- # array
+ # Array
  ~~~
  function func (a,b,c,){
  var x = [];
