@@ -56,6 +56,7 @@ console.log(employee);
  x.push(a);
  x.push(b);
  x.push(c);
+ x.pop();
  return x
  }
  
