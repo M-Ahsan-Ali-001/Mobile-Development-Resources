@@ -74,6 +74,7 @@ typeof(10>2) // boolean
 ~~~
 # Exception Handling
 ~~~
+
 function add(a,b){
 try{
 if(typeof(a) != 'number'){
@@ -84,6 +85,7 @@ throw new ReferenceError('second is no a number');
 }
 else {
 console.log(a+b)
+}
 }
 
 
