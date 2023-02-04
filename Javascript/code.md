@@ -38,5 +38,14 @@ console.log(employee);
 employee.salary = "14000$";
 console.log(employee);
 ~~~
+
+# Functions  
+ ~~~
+ function detail(x,y) {
+ console.log("user:",x , "id:",y);
+ }
+ 
+ detail("brk101",5567)
+ ~~~
  
 
