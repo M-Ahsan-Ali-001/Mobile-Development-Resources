@@ -38,7 +38,10 @@ console.log(employee);
 employee.salary = "14000$";
 
 employee['address'] = "Taxes";
+employee["years"] = function() { console.log(5);}
+
 console.log(employee);
+employee.years();
 ~~~
 
 # Functions  
@@ -65,4 +68,7 @@ console.log(employee);
  func("abc",3,4);
  ~~~
  
-
+# Type Finder 
+~~~
+typeof(10>2) // boolean
+~~~
