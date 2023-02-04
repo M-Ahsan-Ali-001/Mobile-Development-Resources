@@ -49,5 +49,19 @@ console.log(employee);
  
  detail("brk101",5567)
  ~~~
+ # array
+ ~~~
+ function func (a,b,c,){
+ var x = [];
+ x.push(a);
+ x.push(b);
+ x.push(c);
+ return x
+ }
+ 
+ func(1,3,4);
+  
+ func("abc",3,4);
+ ~~~
  
 
