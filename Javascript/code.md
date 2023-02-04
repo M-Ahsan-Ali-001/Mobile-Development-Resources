@@ -72,3 +72,26 @@ employee.years();
 ~~~
 typeof(10>2) // boolean
 ~~~
+# Exception Handling
+~~~
+function add(a,b){
+try{
+if(typeof(a) != 'number'){
+throw new ReferenceError('first is no a number');
+}
+else if(typeof(b) != 'number'){
+throw new ReferenceError('second is no a number');
+}
+else {
+console.log(a+b)
+}
+
+
+catch(err)
+{
+console.log('Error!',err);
+}
+console.log('Still runs');
+}
+add(1,'1');
+~~~
