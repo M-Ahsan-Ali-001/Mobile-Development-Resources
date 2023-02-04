@@ -36,6 +36,8 @@ designation: "Manager"
 
 console.log(employee);
 employee.salary = "14000$";
+
+employee['address'] = "Taxes";
 console.log(employee);
 ~~~
 
