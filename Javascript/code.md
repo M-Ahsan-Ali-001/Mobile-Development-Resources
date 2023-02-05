@@ -232,7 +232,7 @@ console.log(number * number)
 
 # Types of Varaible in JS 
 ~~~
-<b>var</b> 
+**var** 
 <b>let</b> // it can be able re-assinged and declare later
 
 <b>const</b> // it can not be able re-assinged and declare later
