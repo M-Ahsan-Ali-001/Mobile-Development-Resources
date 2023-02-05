@@ -138,12 +138,47 @@ class mobile {}
 var obj = Object.create(mobile) // method 1 to create object of class
 var obj1 = new mobile();
 ~~~
+# constructor
+~~~
+class a {
+  constructor (x,y) {
+  this.x =x;
+  this.y=y;
+      }
+  }
+  
+  class b  {
+  constructor (p,e,f) {
+    this.p=p;
+    this.bf = new a(e,f);
+
+              }
+  }
+  var obj = new b(1,2,3);
+  console.log(obj.bf)
+  
+
+~~~
 
 # Inheritence
 ~~~
-class mobile {}
-class samsung extends mobile {}
-class os extends  samsung{}
+class a {
+  constructor (x,y) {
+  this.x =x;
+  this.y=y;
+      }
+  }
+  
+  class b extends a {
+  constructor (p,e,f) {
+   super (e,f);
+    this.p=p;
+  
+
+              }
+  }
+  var obj = new b(1,2,3);
+  console.log(obj.bf)
 ~~~
 
 # polymorphism
