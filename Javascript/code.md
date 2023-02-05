@@ -127,3 +127,8 @@ else {
 
  recur(1);
 ~~~
+# Passing variable to String
+~~~
+var fontSize= '50px';
+var style = `font-size: ${fontSize}`
+~~~
