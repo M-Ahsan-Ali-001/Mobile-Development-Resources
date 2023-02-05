@@ -211,3 +211,7 @@ var brk =  new breakk();
 accl.ride();
 brk.ride();
 ~~~
+# Prototype in Classes
+~~~
+   var proto = Object.getPrototypeOf(this);
+~~~
