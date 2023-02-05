@@ -48,7 +48,19 @@ employee.years();
 employee.func();
 console.log(employee);
 ~~~
+# Object iteration 
+~~~
+var obj = {
+speed:'100-km/hour',
+height: '10m'
+}
 
+console.log(Objetc.keys(obj)); // prints the all the keys inside obj 
+console.log(Objetc.values(obj));// prints the all the values of keys inside obj
+console.log(Objetc.entries(obj)); .. prints arrays of both keys and thier values
+
+
+~~~
 # Functions  
  ~~~
  function detail(x,y) {
@@ -222,7 +234,7 @@ brk.ride();
 ~~~
    var proto = Object.getPrototypeOf(this);
 ~~~
-# Default paramter
+# Default parameter
 ~~~
 function func (number = 10) {
 console.log(number * number)
@@ -232,8 +244,9 @@ console.log(number * number)
 
 # Types of Varaible in JS 
 ~~~
-var
-let // it can be able to  re-assinged and declared later
+var // it can be able to  re-assinged and declared later(normal)
 
-const // it can not be able to re-assinged and declared later
+let // it can be able to  re-assinged and declared later(medium)
+
+const // it can not be able to re-assinged and declared later (strict)
 ~~~
