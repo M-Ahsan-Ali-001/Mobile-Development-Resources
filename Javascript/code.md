@@ -132,3 +132,47 @@ else {
 var fontSize= '50px';
 var style = `font-size: ${fontSize}`
 ~~~
+# Classes
+~~~
+class mobile {}
+var obj = Object.create(mobile) // method 1 to create object of class
+var obj1 = new mobile();
+~~~
+
+# Inheritence
+~~~
+class mobile {}
+class samsung extends mobile {}
+class os extends  samsung{}
+~~~
+
+# polymorphism
+~~~
+// create your classes here
+class bike{
+
+ride() {
+    console.log('Riding!');
+}
+
+}
+
+class accelrator extends bike {
+    ride() {
+        super.ride() // calling parent func
+        console.log('at speed limit');
+    }
+}
+class breakk extends accelrator {
+
+    ride() {
+        console.log("break pressed!");
+    }
+}
+
+var accl = new accelrator ();
+var brk =  new breakk();
+
+accl.ride();
+brk.ride();
+~~~
