@@ -31,7 +31,10 @@ console.log(i+1);
 var employee ={
 name : "user1",
 id :3456,
-designation: "Manager"
+designation: "Manager",
+ func: function() {
+     this.salary= '5000$'; // accessing inside object variables 
+ }   
 }
 
 console.log(employee);
@@ -42,6 +45,8 @@ employee["years"] = function() { console.log(5);}
 
 console.log(employee);
 employee.years();
+employee.func();
+console.log(employee);
 ~~~
 
 # Functions  
@@ -107,7 +112,7 @@ retrun {
 }
 obj (5);
 ~~~
-# Recurssion
+# Recursion
 ~~~
 function recur(val) {
 console.log("Now value of val is : ",val);
