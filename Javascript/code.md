@@ -107,3 +107,18 @@ retrun {
 }
 obj (5);
 ~~~
+# Recurssion
+~~~
+function recur(val) {
+console.log("Now value of val is : ",val);
+if( val === 10){ // === means to compare both variable and also compare there datatype
+  return val;
+   }
+else {
+  recur(val+1);
+   }
+
+ }
+
+ recur(1);
+~~~
