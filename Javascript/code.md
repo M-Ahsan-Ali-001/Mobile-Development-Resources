@@ -215,3 +215,9 @@ brk.ride();
 ~~~
    var proto = Object.getPrototypeOf(this);
 ~~~
+# Default paramter
+~~~
+function func (number = 10) {
+console.log(number * number)
+}
+~~~
