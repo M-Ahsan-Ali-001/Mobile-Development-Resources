@@ -97,3 +97,13 @@ console.log('Still runs');
 }
 add(1,'1');
 ~~~
+# Return Single and Multiple values
+~~~
+function obj (val){
+retrun {
+   rtn: val,
+   sum: val + 4
+   }
+}
+obj (5);
+~~~
