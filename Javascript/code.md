@@ -71,6 +71,13 @@ console.log(employee);
  func(1,3,4);
   
  func("abc",3,4);
+ //concat
+ var i = ['a','b','c'];
+ 
+ t.concat( ['d','e','f']);
+ 
+ var  j= ['a','b','c'];
+ i=i+j
  ~~~
  
 # Type Finder 
@@ -220,4 +227,13 @@ brk.ride();
 function func (number = 10) {
 console.log(number * number)
 }
+
+~~~
+
+# Types of Varaible in JS 
+~~~
+<b>var</b> 
+<b>let</b> // it can be able re-assinged and declare later
+
+<b>const</b> // it can not be able re-assinged and declare later
 ~~~
