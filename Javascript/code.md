@@ -232,8 +232,8 @@ console.log(number * number)
 
 # Types of Varaible in JS 
 ~~~
-__var__ 
-<b>let</b> // it can be able re-assinged and declare later
+var
+let // it can be able to  re-assinged and declared later
 
-<b>const</b> // it can not be able re-assinged and declare later
+const // it can not be able to re-assinged and declared later
 ~~~
