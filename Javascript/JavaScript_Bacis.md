@@ -419,6 +419,8 @@ if(typeof(ipt)=== 'string')
     document.body.innerText = '';//remove all the html from current page
     document.body.appendChild(h1);
 }
+
+
 // changing <h1> on clicks
 const h1 = document.querySelector('h1')
 var arr = [
@@ -447,4 +449,10 @@ default :{
   }
 }
 h1.addEventListener('click' , handleClicks);
+~~~
+# JSON conversions 
+~~~
+const jsonStr = '{"speed": "100 km/h"}';
+let jv = JSON.parse(json); // coverted to an object now accessable
+let re_cov = JSON.stringify(jv); //re-convert to JSON format
 ~~~
