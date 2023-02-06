@@ -394,3 +394,10 @@ console.log(obj.head.next.hold)
 
 console.log(obj.head.next.next)
 ~~~
+# DOM Manipulation 
+~~~
+const h2 =  document.createElement('h2');// create a constant variable
+h2.setAttribute('id' ,'hold')//sets id
+h2.setAttribute('class', 'sd') sets class
+document.body.appendChlid(h2)// to run with changes
+~~~
