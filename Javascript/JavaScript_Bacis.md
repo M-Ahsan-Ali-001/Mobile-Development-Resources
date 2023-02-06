@@ -345,7 +345,7 @@ function show(n,x,y) {
 show(...ar)
 
 ~~~
-#Rest Operator
+# Rest Operator
 ~~~
 // create a mini array 
 var ar =[2 ,3 ,4 ,5 ,6]
