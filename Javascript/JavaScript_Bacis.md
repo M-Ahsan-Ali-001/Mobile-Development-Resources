@@ -363,3 +363,34 @@ var ar2 = [...ar , ...ar1]
 console.log(ar2)
 //output [ 2, 3, 4, 5, 6, 7, 8, 9]
 ~~~
+# Linked List
+~~~
+class node {
+constructor (head ,next = null) {
+  this.hold = head,
+  this.next = next
+}
+}
+
+class linked_list {
+
+constructor (numb) {
+ this.head = new node(numb)
+}
+
+addNewnode(numb) {
+var newNode = new node(numb);
+newNode.next =this.head;
+this.head.next = null;
+this.head = newNode;
+
+}
+
+}
+var obj = new linked_list(1);
+obj.addNewnode(2);
+console.log(obj.head.hold)
+console.log(obj.head.next.hold)
+
+console.log(obj.head.next.next)
+~~~
