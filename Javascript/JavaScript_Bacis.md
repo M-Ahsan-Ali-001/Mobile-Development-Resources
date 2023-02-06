@@ -400,4 +400,51 @@ const h2 =  document.createElement('h2');// create a constant variable
 h2.setAttribute('id' ,'hold')//sets id
 h2.setAttribute('class', 'sd') sets class
 document.body.appendChlid(h2)// to run with changes
+//Selectors
+document.querySelector('p')// find paragraph
+document.querySelectorAll('p')// print total number of paragraph used
+document.getElementsByClassName('heading')// search by class name
+// Event Listeners
+const tar = document.querySelector('body');
+function func (){console.log('body clicked')}
+tar.addEventListener('click' ,func)
+
+// Taking input from user and printing
+
+let ipt = prompt('Enter Your Name') // prompt is ude to take input from user
+if(typeof(ipt)=== 'string')
+{
+    var h1 = document.createElement('h1');
+    h1.innerText ='Hello! ' + ipt;
+    document.body.innerText = '';//remove all the html from current page
+    document.body.appendChild(h1);
+}
+// changing <h1> on clicks
+const h1 = document.querySelector('h1')
+var arr = [
+    'Example Domain',
+    'First Click',
+    'Second Click',
+    'Third Click'
+];
+function handleClicks(){
+
+  switch(h1.innerText){
+      case arr[0]:{
+          h1.innerText=arr[1]
+              break;   }
+    case arr[1]:  {
+  h1.innerText=arr[2]
+          break; } 
+ case arr[2]: {
+       h1.innerText= arr[3]
+          break;
+ }
+default :{
+      h1.innerText= arr[0]
+}
+          
+  }
+}
+h1.addEventListener('click' , handleClicks);
 ~~~
