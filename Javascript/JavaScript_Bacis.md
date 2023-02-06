@@ -269,7 +269,7 @@ const // it can not be able to re-assinged and declared later (strict)
     console.log(proto , obj[proto]);
   }
 ~~~
-# forEach
+# forEach on array
 ~~~
 //method # 1 (forEach) 
   const v = ['a' ,'b' , 'c' ,'d']
@@ -287,4 +287,48 @@ const // it can not be able to re-assinged and declared later (strict)
     function(v,idx){
       console.log(`${idx} : ${v} `)
     } );
+~~~
+# filter on array
+~~~
+ const b = [0,10,23,44,5,66,9];
+
+    console.log(
+     b.filter(function(a){
+      return a>19})
+    )
+~~~
+# Maps on array
+~~~
+const b = [0,10,23,44,5,66,9];
+
+    console.log(b.map (function(x){ return x/2}))
+
+~~~
+
+# Maps
+~~~
+let g = new Map();
+g.set(1 ,'test')
+g.set(2 ,'test2')
+g.set(3 ,'test3')
+
+console.log(g)let g = new Map();
+g.set(1 ,'test')
+g.set(2 ,'test2')
+g.set(3 ,'test3')
+
+console.log(g)
+g.get(1);
+~~~
+# Sets
+~~~
+
+// sets remove repitition from array
+
+const arr = ['a' ,'a' ,'b','b','c','c'];
+
+let a =  new Set(arr);
+console.log(a);
+
+
 ~~~
