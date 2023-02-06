@@ -332,3 +332,34 @@ console.log(a);
 
 
 ~~~
+# Spread operator 
+~~~
+var ar =['abc' ,'def' ,'ghk']
+
+function show(n,x,y) {
+  console.log(n)
+  console.log(x)
+  console.log(y)
+
+}
+show(...ar)
+
+~~~
+#Rest Operator
+~~~
+// create a mini array 
+var ar =[2 ,3 ,4 ,5 ,6]
+var ar1 = [7,8,9]
+function show(n,...x) {
+ return x.map(its => its *n) // its => means passing value in function
+
+}
+console.log(show(ar[0],ar[1],ar[2],ar[3],ar[4]))
+// output : [6, 8, 10, 12]
+
+
+//concat array
+var ar2 = [...ar , ...ar1]
+console.log(ar2)
+//output [ 2, 3, 4, 5, 6, 7, 8, 9]
+~~~
