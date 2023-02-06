@@ -250,3 +250,22 @@ let // it can be able to  re-assinged and declared later(medium)
 
 const // it can not be able to re-assinged and declared later (strict)
 ~~~
+# for in and of loops
+~~~
+
+  const obj = {
+  speed:100,
+  enigne:'on'
+
+  }
+
+  for (proto in obj)
+  {
+    console.log(proto);
+  }
+
+  for (proto of Object.keys(obj)){
+
+    console.log(proto , obj[proto]);
+  }
+~~~
