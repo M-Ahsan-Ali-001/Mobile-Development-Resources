@@ -269,3 +269,22 @@ const // it can not be able to re-assinged and declared later (strict)
     console.log(proto , obj[proto]);
   }
 ~~~
+# forEach
+~~~
+//method # 1 (forEach) 
+  const v = ['a' ,'b' , 'c' ,'d']
+
+  function iter( v, idx)
+  {
+    console.log(`${idx} : ${v} `)
+  }
+
+  v.forEach(iter);
+
+  //method #2 (for each)
+ 
+  v.forEach(
+    function(v,idx){
+      console.log(`${idx} : ${v} `)
+    } );
+~~~
