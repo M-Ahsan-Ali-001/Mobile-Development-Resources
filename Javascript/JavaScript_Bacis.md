@@ -83,13 +83,19 @@ console.log(Objetc.entries(obj)); .. prints arrays of both keys and thier values
  func(1,3,4);
   
  func("abc",3,4);
+ 
  //concat
+ 
  var i = ['a','b','c'];
  
  t.concat( ['d','e','f']);
  
  var  j= ['a','b','c'];
  i=i+j
+ 
+ // new concept
+ let a =[1,2,3,4]
+ let [y,x]=a//y=1 , x=2
  ~~~
  
 # Type Finder 
