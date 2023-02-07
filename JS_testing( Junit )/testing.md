@@ -5,7 +5,8 @@
 function func(strA ,strB) { return  strA.concat(strB)}
 
 expect(func('abc','def')).toBe('abcdef') // testing by giving input and comparing ouput
-
+//.toBeDefiend is another function used check whether afunction exsit or not 
+//TDD (Test Driven Development) : interleaves testing and writing code
 //Code-Coverage: tell about how much code is tested.
 ~~~
 # Mocking
@@ -37,3 +38,5 @@ expect(func('abc','def')).toBe('abcdef') // testing by giving input and comparin
 // npm install -save-dev jest (installing jest)
 //npm run test (to execute test)
 ~~~
+
+
