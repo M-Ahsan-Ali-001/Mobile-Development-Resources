@@ -32,7 +32,8 @@ expect(func('abc','def')).toBe('abcdef') // testing by giving input and comparin
 ~~~
 # Adding jest to your project folder
 ~~~
-// npm init -y (in terminal)
+// all these commands needs to be run in terminal 
+// npm init -y (used to generate a package. json file for your JavaScript project.)
 // npm install -save-dev jest (installing jest)
 //npm run test (to execute test)
 ~~~
