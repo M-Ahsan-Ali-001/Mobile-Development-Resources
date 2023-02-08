@@ -20,3 +20,7 @@
 // Continous Delivery
 // Continous Deployment
 ~~~
+# Staging vs Production Environment
+~~~
+//Staging means to mimic production Environment
+~~~
