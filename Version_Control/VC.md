@@ -2,8 +2,8 @@
 ~~~
 // subversion
 // AWS Code Commit
-// Mercurial
-// git
+// Mercurial (De-centeralized)
+// git (De-centeralized) 
 
 ~~~
 
