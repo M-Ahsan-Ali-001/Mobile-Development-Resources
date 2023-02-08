@@ -1,9 +1,9 @@
 # Different Version control systems
 ~~~
-// subversion
+// subversion (Centeralized , not-distributed)
 // AWS Code Commit
-// Mercurial (De-centeralized)
-// git (De-centeralized) 
+// Mercurial (De-centeralized ,  distributed)
+// git (De-centeralized , distributed) 
 
 ~~~
 
