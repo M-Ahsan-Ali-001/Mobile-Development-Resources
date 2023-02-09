@@ -24,6 +24,60 @@ cat < input.txt //displays text from entered from keyborad
 ~~~
 # Grep 
 ~~~
-grep  Sam name.txt  //check for all the name sma in name.txt file
+grep  Sam name.txt  //check for all the name sma in name.txt file.
 grep -i Sam name.txt //ignore case
+~~~
+# Git Clone 
+~~~
+// dir is uswedin cmd to list the files and directories
+
+git version // print the version of git 
+git clone https:"URL" // put URL of repo you want to clone.
+~~~
+# Git Status
+~~~
+git status // return the branch we are on and all the commits and changes.
+~~~
+
+# Git add
+~~~
+git add 'file-name' // git commandthat marks a file to be included as part of code commit.
+~~~
+
+# Git restore
+~~~
+git restore --stage test.txt // to remove added file from stage area.
+~~~
+
+# git commit 
+~~~
+git commit -m  "adding a new file for testing" //(-m means message)
+~~~
+# Git checkout 
+~~~
+git checkout -B feature/lesson // used to create a new branch and switch to that new branch 
+git checkout main //used to switch to a repo.
+~~~
+# Git Branch
+~~~
+git branch  // tells about the current branch we are in
+~~~
+# Git push
+~~~
+git push -u origin feature/lesson // push to specific branch
+~~~
+# Git pull
+~~~
+git pull // get the latest changes
+~~~
+
+# Git init
+~~~
+git init  //used to create a a repository on local system
+~~~
+
+# Git remote
+~~~
+git remote -v // list connection we have with other repos.
+git remote add origin 'URI' // used to add a connection to new repo
 ~~~
