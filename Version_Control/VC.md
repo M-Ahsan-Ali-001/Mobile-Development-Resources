@@ -33,3 +33,12 @@
 ~~~
 // it is a cloud based service 
 ~~~
+# Git WorkFlow
+~~~
+// modified: 'git add'  
+// staged area: files is added to staged area
+// committed: 'git commit' => 'git push ' pushed to remote repository
+// Remote repsitory : 'git fetch' => 'get checkout'
+~~~
+
+#  
