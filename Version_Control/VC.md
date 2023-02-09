@@ -24,3 +24,12 @@
 ~~~
 //Staging means to mimic production Environment
 ~~~
+# Git 
+~~~
+// Git is a version control system designed to help users keep track of changes to files within their projects
+~~~
+
+# GitHub
+~~~
+// it is a cloud based service 
+~~~
