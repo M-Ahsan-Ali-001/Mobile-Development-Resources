@@ -81,3 +81,7 @@ git init  //used to create a a repository on local system
 git remote -v // list connection we have with other repos.
 git remote add origin 'URI' // used to add a connection to new repo
 ~~~
+# git log 
+~~~
+git log --merge // prints the merge conflict
+~~~
