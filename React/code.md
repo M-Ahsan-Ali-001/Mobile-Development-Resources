@@ -1,4 +1,4 @@
-# Creaying a new React Project
+# Creating a new React Project
 ~~~
 // run in terminal
 
