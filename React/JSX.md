@@ -18,3 +18,11 @@ return (
 // <Header/> is used to invoke the the function
 
 ~~~
+
+# Arrow Function
+~~~
+
+const name = (props) => { return <h1>props.test</h1>} // method - 1 
+const name = props => { <h1>props.test</h1>} // method - 2  (explicit return)
+
+~~~
