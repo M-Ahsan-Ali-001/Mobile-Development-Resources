@@ -26,3 +26,8 @@ const name = (props) => { return <h1>props.test</h1>} // method - 1
 const name = props => { return(<h1>props.test</h1>)} // method - 2  
 
 ~~~
+
+# Bablejs
+~~~
+// Bablejs is a compiler used to transpile JS so that browser is able to understand.
+~~~
