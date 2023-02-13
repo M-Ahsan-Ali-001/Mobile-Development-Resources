@@ -43,7 +43,7 @@ console.log('third-method')
 
 return (
 
-<button onClick="fun1">
+<button onClick="func1">
 Click Me
 </button>
 
@@ -58,6 +58,7 @@ import {usedState} from react // it must be added othewise hooks would not work
 function hookPrac(){
 let hold = 0;
 let [valueShow , setValue] = useState('string') // can tak number ,string  ( assing string to valueShow)
+let count = useRef(0); // it use to directly access DOM  
 let funcIncr = (props )=> {
 hold =  valueShow + 1
 setValue(hold) // it is use to change the value of the valueShow
@@ -70,8 +71,59 @@ return(
 
 }
 
-
 ~~~
+# Prop Drilling
+~~~
+//prop drilling is a situation where you are passing data from a parent to a child component, then to a grandchild component, and so on, until it reaches a more //distant component further down the component tree, where this data is required.
+~~~
+# Prop Drilling
+
+# Lifting up State
+~~~
+// we move the useState to parent , component donot have usestate method
+~~~
+# Reducer
+~~~
+import React, { useReducer } from "react";
+
+const reducer = (state ,act ) =>{ 
+    console.log("re")
+        if (act.type==='Driving') return ({money : state.money + 10})
+    if (act.type==='refuel') return ({money : state.money - 10})
+
+    return new Error('test');
+
+}
+
+
+function CtAPi (props) {
+    const intiVal = { money:100};
+
+    const [state ,func] =useReducer(reducer, intiVal); //passing value of intiVal obj to  state and passing return of reducer to state
+    //func is use to pass type object to reducer 
+    return (
+<div>
+<h1>Cash : {state.money}</h1>
+    <div>
+    <button onClick={()=>func({type:"Driving"})}>
+     Click me
+    </button>
+    <button onClick={()=>func({type: "refuel"})}>
+     refuel
+    </button>
+
+
+
+     </div>
+</div>
+   
+
+    )
+}
+
+export default CtAPi;
+~~~
+
 
 # Bablejs
 ~~~
