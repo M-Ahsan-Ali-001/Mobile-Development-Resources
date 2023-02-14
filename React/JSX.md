@@ -76,8 +76,9 @@ return(
 ~~~
 //prop drilling is a situation where you are passing data from a parent to a child component, then to a grandchild component, and so on, until it reaches a more //distant component further down the component tree, where this data is required.
 ~~~
-# Prop Drilling
-
+# Cotext API
+~~~
+~~~
 # Lifting up State
 ~~~
 // we move the useState to parent , component donot have usestate method
