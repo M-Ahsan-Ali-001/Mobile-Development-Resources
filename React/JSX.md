@@ -130,3 +130,15 @@ export default CtAPi;
 ~~~
 // Bablejs is a compiler used to transpile JS so that browser is able to understand.
 ~~~
+
+# React Router
+~~~
+npm i react-router-dom@6 // run in terminal to downlaod and install
+// edit idex.js and must add import {BrowserRouter} form 'react-router-dom'
+//after that wrap the <App/> like this"<BrowserRouter> <App />></BrowserRouter>"
+// now  goto App.js import {Routes,Route,Links} form 'react-router-dom'
+// in App.js wrap all the components in Route like this "<Route path ="/"  element={<HomePage/>} >"
+// to link to a component we add <Link to="name"> name</Lonk>
+// SPA donot naviate is changes the state
+
+~~~
