@@ -78,6 +78,90 @@ return(
 ~~~
 # Cotext API
 ~~~
+/*
+The React Context API is a way for a React app to effectively produce global variables that can be passed around. This is the alternative to "prop drilling" or moving props from grandparent to child to parent, and so on. Context is also touted as an easier, lighter approach to state management using Redux.
+
+*/
+
+// App.js
+import logo from './logo.svg';
+import './App.css';
+import CtAPi from './Components/CtApi';
+import About from './Components/About';
+import MealProv from './Components/Ctxt';
+import MealList from './Components/MealList';
+import {Routes,Route ,Link} from 'react-router-dom'
+function App() {
+  return (
+    <div>
+      
+      <nav>
+        
+        <Link to="/">Homepage</Link>
+        
+        <Link to="/meal">Meal</Link>
+        <Link to="/about-me"  >About-Us</Link>
+
+      </nav>
+      <Routes>      <Route path="/" element={<CtAPi/> }/>
+      <Route path="/about-me" element={<About />}/>
+      <Route path="/meal" element={<MealProv><MealList /></MealProv>}/>
+      </Routes>
+
+      
+    </div>
+  )
+}
+
+export default App;
+
+// Ctxt.js
+import React from "react";
+
+const MealCtx = React.createContext();
+
+
+const ListM = "beans";//["beans" , "eggs"  , "bread"];
+
+const MealProv = ({children}) =>{
+
+const [meals, setMeal] = React.useState(ListM);
+function ChgMe () {
+    setMeal("Apples")
+}
+return (
+    <MealCtx.Provider value ={{meals , ChgMe}}>
+        {children};
+    </MealCtx.Provider>
+)
+
+}
+
+export const useMeal = ()=>React.useContext(MealCtx);
+export default MealProv;
+
+// MealList
+import react, { useMeal } from "./Ctxt";
+
+const MealList = ()=> {
+    
+   const {meals } =useMeal();
+   let style= {marginRight:"auto" , marginLeft:"50%" ,}
+    return (
+        <div style={style}>
+            <h1>All meal</h1>
+            <h2>{meals}</h2>
+            <button onClick={()=>{console.log("apples")}}> Click</button>
+           
+
+            
+        </div>
+        )
+
+}
+
+export default MealList;
+
 ~~~
 # Lifting up State
 ~~~
