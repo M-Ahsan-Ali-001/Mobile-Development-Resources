@@ -253,3 +253,11 @@ function App() {
 export default App;
 
 ~~~
+
+# Conditional Rendering
+~~~
+(age>18 && age <55)?<Eligble/>: <Not-Eligble/>
+
+true && console.log('This will show') // it will print on sreen
+false && console.log('This will show') // it will not print on sreen
+~~~
