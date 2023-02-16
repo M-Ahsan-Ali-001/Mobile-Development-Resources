@@ -141,4 +141,31 @@ npm i react-router-dom@6 // run in terminal to downlaod and install
 // to link to a component we add <Link to="name"> name</Lonk>
 // SPA donot naviate is changes the state
 
+// Example 
+import logo from './logo.svg';
+import './App.css';
+import CtAPi from './Components/CtApi';
+import About from './Components/About';
+import {Routes,Route ,Link} from 'react-router-dom'
+function App() {
+  return (
+    <div>
+      
+      <nav>
+        
+        <Link to="/">Homepage</Link>
+        <Link to="/about-me"  >About-Us</Link>
+
+      </nav>
+      <Routes>      <Route path="/" element={<CtAPi/>}/>
+      <Route path="/about-me" element={<About />}/>
+      </Routes>
+
+      
+    </div>
+  );
+}
+
+export default App;
+
 ~~~
