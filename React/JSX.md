@@ -258,6 +258,54 @@ export default App;
 ~~~
 (age>18 && age <55)?<Eligble/>: <Not-Eligble/>
 
-true && console.log('This will show') // it will print on sreen
-false && console.log('This will show') // it will not print on sreen
+true && console.log('This will show') // it will print on screen
+false && console.log('This will show') // it will not print on screen
+~~~
+# Importing an Image
+~~~
+// rooftops method
+import rooftops from './folder and image name'
+function Fn(){
+return(
+<img
+height={200}
+src={rooftop}
+alt="roof-image"
+)/>
+
+}
+
+// require method
+
+<img
+height={200}
+src={require("./folder and image name")}
+alt="roof-image"
+)/>
+
+// url method
+const url = "url of image";
+<img
+height={200}
+src={url}
+alt="roof-image"
+)/>
+
+~~~
+
+
+# Media Packages
+~~~
+//https://github.com/Cookpete/react-player
+//terimal code
+npm install react-player
+
+// react code
+import ReactPlayer from "react-player";
+import ReactPlayer from "react-player/youtube";
+
+<ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U'
+playing={false}
+voume={0.5}
+/>
 ~~~
