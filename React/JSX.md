@@ -309,3 +309,12 @@ playing={false}
 voume={0.5}
 />
 ~~~
+# Audio
+~~~
+const bird = new Audio(url);
+function Ply(){
+(bird.paused)?bird.play:bird.pause()
+
+}
+
+~~~
