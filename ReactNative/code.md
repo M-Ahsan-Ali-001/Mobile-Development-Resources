@@ -8,7 +8,22 @@
 npx create-expo-app projectname
 npm start
 
+~~~
 
+# Core components
+~~~
+view
+Image
+Textinput
+ScrollView
 
+~~~
+
+# Community components
+~~~ 
+React Navigation
+React Native Screens
+React Native Maps
+React natives Videos
 
 ~~~
