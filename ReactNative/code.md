@@ -51,3 +51,31 @@ return (
 export default LittleLemonHeader;
 
 ~~~
+# CSS Style Rules
+~~~
+{
+
+flex: 1 // it use set the height of the <View/> 
+ marginVertical: 8, // used to given space from top
+
+}
+
+~~~
+# Scroll view
+~~~
+//mentioning Heigth is compulsory
+<View style={{flex:1}}>
+   <ScrollView style={{
+   paddingHorizontal:40,
+   paddingVertical:40,
+   horizontal={false} // => used for horizontal list
+   indicatorStyle={'white'} // adds a scroll bar
+   
+   backgrundColor:'#495E57'}}>
+   </ScrrollView>
+
+</View>
+
+
+
+~~~
