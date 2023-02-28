@@ -27,3 +27,27 @@ React Native Maps
 React natives Videos
 
 ~~~
+# React Native Header with button
+~~~
+import { StatusBar } from 'expo-status-bar';
+import { useState } from 'react';
+import { Button, StyleSheet, Text, View } from 'react-native';
+
+function LittleLemonHeader(prope)
+{
+   
+   let [val,chgVal] =useState(prope.txt)
+   let chng = ()=>{
+    chgVal("Value has been Changed!")
+   }
+return (
+    <View >
+        <Text> A {val}</Text>
+        <Button title='Click' onPress={chng} />
+    </View>
+)
+
+}
+export default LittleLemonHeader;
+
+~~~
