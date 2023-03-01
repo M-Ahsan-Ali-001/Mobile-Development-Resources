@@ -76,6 +76,19 @@ flex: 1 // it use set the height of the <View/>
 
 </View>
 
+~~~
+# Style Script API
+~~~
+//used to remove inline styling and make code more read able
+const styleAll = style.create({
 
+header: {
+color:"red"
+}
+footer:{
+color:"yellow
+}
+
+})
 
 ~~~
